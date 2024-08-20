@@ -1,0 +1,42 @@
+Create Database BrowserStore;
+
+use BrowserStore;
+
+create table Users(
+username varchar(50) primary key not null,
+password varchar(50) not null
+);
+
+create table Devops(
+username varchar(50) primary key not null,
+password varchar(50) not null
+);
+
+desc table Users;
+desc table Devops;
+
+insert into Devops(username, password) values("dev_parul", "Raut#0110");
+insert into Devops(username, password) values("dev_divyani", "Pendam#0111");
+insert into Devops(username, password) values("dev_pallavi", "Khare#0112");
+insert into Devops(username, password) values("dev_yachana", "Mahant#0113");
+
+select * from Devops;
+
+
+create table Extensions(
+serialNo int primary key auto_increment,
+extensionName varchar(50) not null,
+devId int not null,
+dateUploaded date not null,
+lastModified date not null,
+versionNo varchar(20) not null,
+browserLink varchar(255),
+extension blob
+);
+   
+   
+desc table Extensions;
+
+select * from Extensions;
+
+ALTER TABLE Extensions MODIFY extension MEDIUMBLOB;
