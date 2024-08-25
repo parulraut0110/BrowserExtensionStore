@@ -38,11 +38,12 @@ public class ExtensionEntity {
 	    private String browserLink;
 
 	    @Lob
-	    @Column(name = "extension")
-	    private InputStream extension;
+	    @Column(name = "extension", columnDefinition = "MEDIUMBLOB")	  
+	    private byte[] extension;
+	    
 
 		public ExtensionEntity(int serialNo, String extensionName, int devId, Date dateUploaded, Date lastModified,
-				String versionNo, String browserLink, InputStream extension) {
+				String versionNo, String browserLink, byte[] extension) {
 			super();
 			this.serialNo = serialNo;
 			this.extensionName = extensionName;
@@ -110,11 +111,11 @@ public class ExtensionEntity {
 			this.browserLink = browserLink;
 		}
 
-		public InputStream getExtension() {
+		public byte[] getExtension() {
 			return extension;
 		}
 
-		public void setExtension(InputStream extension) {
+		public void setExtension(byte[] extension) {
 			this.extension = extension;
 		}
 

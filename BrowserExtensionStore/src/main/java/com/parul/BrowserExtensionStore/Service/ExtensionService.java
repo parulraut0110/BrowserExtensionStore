@@ -19,7 +19,7 @@ public class ExtensionService {
     @Autowired
     private ExtensionRepo extensionRepo;
 
-    public void saveExtension(String extensionName, int devId, Date dateUploaded, Date lastModified, String versionNo, String browserLink, InputStream fileStream) {
+    public void saveExtension(String extensionName, int devId, Date dateUploaded, Date lastModified, String versionNo, String browserLink, byte[] fileStream) {
         // Ensure that dates are not null
         if (dateUploaded == null || lastModified == null) {
             throw new IllegalArgumentException("dateUploaded and lastModified cannot be null");
