@@ -1,12 +1,13 @@
 package com.parul.BrowserExtensionStore.Entity;
 
+import java.io.InputStream;
 import java.sql.Date;
 
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+
 @Entity
 @Table(name = "Extensions")
 @NoArgsConstructor
@@ -38,6 +39,84 @@ public class ExtensionEntity {
 
 	    @Lob
 	    @Column(name = "extension")
-	    private byte[] extension;
+	    private InputStream extension;
 
+		public ExtensionEntity(int serialNo, String extensionName, int devId, Date dateUploaded, Date lastModified,
+				String versionNo, String browserLink, InputStream extension) {
+			super();
+			this.serialNo = serialNo;
+			this.extensionName = extensionName;
+			this.devId = devId;
+			this.dateUploaded = dateUploaded;
+			this.lastModified = lastModified;
+			this.versionNo = versionNo;
+			this.browserLink = browserLink;
+			this.extension = extension;
+		}
+
+		public int getSerialNo() {
+			return serialNo;
+		}
+
+		public void setSerialNo(int serialNo) {
+			this.serialNo = serialNo;
+		}
+
+		public String getExtensionName() {
+			return extensionName;
+		}
+
+		public void setExtensionName(String extensionName) {
+			this.extensionName = extensionName;
+		}
+
+		public int getDevId() {
+			return devId;
+		}
+
+		public void setDevId(int devId) {
+			this.devId = devId;
+		}
+
+		public Date getDateUploaded() {
+			return dateUploaded;
+		}
+
+		public void setDateUploaded(Date dateUploaded) {
+			this.dateUploaded = dateUploaded;
+		}
+
+		public Date getLastModified() {
+			return lastModified;
+		}
+
+		public void setLastModified(Date lastModified) {
+			this.lastModified = lastModified;
+		}
+
+		public String getVersionNo() {
+			return versionNo;
+		}
+
+		public void setVersionNo(String versionNo) {
+			this.versionNo = versionNo;
+		}
+
+		public String getBrowserLink() {
+			return browserLink;
+		}
+
+		public void setBrowserLink(String browserLink) {
+			this.browserLink = browserLink;
+		}
+
+		public InputStream getExtension() {
+			return extension;
+		}
+
+		public void setExtension(InputStream extension) {
+			this.extension = extension;
+		}
+
+	    
 }
