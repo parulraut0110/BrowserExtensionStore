@@ -1,13 +1,14 @@
 package com.parul.BrowserExtensionStore.Entity;
 
+import java.io.InputStream;
 import java.sql.Date;
 
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@Entity
+
+@Entity            
 @Table(name = "Extensions")
 @NoArgsConstructor
 public class ExtensionEntity {
@@ -22,11 +23,11 @@ public class ExtensionEntity {
 	    @Column(name = "devId", nullable = false)
 	    private int devId;
 
-	    @Column(name = "dateUploaded", nullable = false)
+	    @Column(name = "dateUploaded", nullable = true)
 	    @Temporal(TemporalType.DATE)
 	    private Date dateUploaded;
 
-	    @Column(name = "lastModified", nullable = false)
+	    @Column(name = "lastModified", nullable = true)
 	    @Temporal(TemporalType.DATE)
 	    private Date lastModified;
 
@@ -37,7 +38,86 @@ public class ExtensionEntity {
 	    private String browserLink;
 
 	    @Lob
-	    @Column(name = "extension")
+	    @Column(name = "extension", columnDefinition = "MEDIUMBLOB")	  
 	    private byte[] extension;
+	    
 
+		public ExtensionEntity(int serialNo, String extensionName, int devId, Date dateUploaded, Date lastModified,
+				String versionNo, String browserLink, byte[] extension) {
+			super();
+			this.serialNo = serialNo;
+			this.extensionName = extensionName;
+			this.devId = devId;
+			this.dateUploaded = dateUploaded;
+			this.lastModified = lastModified;
+			this.versionNo = versionNo;
+			this.browserLink = browserLink;
+			this.extension = extension;
+		}
+
+		public int getSerialNo() {
+			return serialNo;
+		}
+
+		public void setSerialNo(int serialNo) {
+			this.serialNo = serialNo;
+		}
+
+		public String getExtensionName() {
+			return extensionName;
+		}
+
+		public void setExtensionName(String extensionName) {
+			this.extensionName = extensionName;
+		}
+
+		public int getDevId() {
+			return devId;
+		}
+
+		public void setDevId(int devId) {
+			this.devId = devId;
+		}
+
+		public Date getDateUploaded() {
+			return dateUploaded;
+		}
+
+		public void setDateUploaded(Date dateUploaded) {
+			this.dateUploaded = dateUploaded;
+		}
+
+		public Date getLastModified() {
+			return lastModified;
+		}
+
+		public void setLastModified(Date lastModified) {
+			this.lastModified = lastModified;
+		}
+
+		public String getVersionNo() {
+			return versionNo;
+		}
+
+		public void setVersionNo(String versionNo) {
+			this.versionNo = versionNo;
+		}
+
+		public String getBrowserLink() {
+			return browserLink;
+		}
+
+		public void setBrowserLink(String browserLink) {
+			this.browserLink = browserLink;
+		}
+
+		public byte[] getExtension() {
+			return extension;
+		}
+
+		public void setExtension(byte[] extension) {
+			this.extension = extension;
+		}
+
+	    
 }

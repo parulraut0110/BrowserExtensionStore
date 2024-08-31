@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.container{ 
+			max-width: 600px; 
+			margin : 0 auto; 
+			padding : 23px; 
+			text-align : center;
+		  };
+
+.button{
+	display : inline-block; 
+	margin : 10px;
+	padding : 10px 20px;
+	font-size : 10px; 
+	color : white;
+	background-color: #007BFF;
+	cursor : pointer;
+};
+
+.button:hover{
+	background-color: #0056B3;
+};
