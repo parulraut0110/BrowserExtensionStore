@@ -8,7 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
-@Entity
+@Entity            
 @Table(name = "Extensions")
 @NoArgsConstructor
 public class ExtensionEntity {

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.button-bar{
+	display : inline;
+	margin : 0;
+	padding : 10px;
+	background-color : rgb(192, 192, 192);
+}
+
+.container{
+	max-width: 600px; 
+	margin : 0 auto; 
+	padding : 23px; 
+	text-align : center;
+  }
+
+.btn{
+	display : block; 
+	margin : 10px;
+	padding : 10px 20px;
+	font-size : 10px; 
+	color : black;
+	background-color: #FFFFFF;
+	cursor : pointer;
+}
+
+.button-bar .button:hover{
+	background-color: blanchedalmond;
+}
+
+.login{
+	display: block;
+	margin:10px;
+	padding: 10px;
+	font-size : 16px; 
+	color : blue;
+	background-color: lightsteelblue;
+	border-radius: 5px;
+	height: 100px;
+	width: 60;
+	
+}
