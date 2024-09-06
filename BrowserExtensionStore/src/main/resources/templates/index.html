@@ -30,61 +30,34 @@
 	  left:200px;
 	  } 
 	  
-	.container {
-		display: grid;	  
-		grid-template-columns: repeat(6, 1fr);	    
-	}  
-	
-	.container .sidebar{
-		display : grid;
-		/*grid-template-columns: repeat(2, 1fr);*/
-		grid-column : span 2; 
-		
-		grid-auto-rows: 200px;
-		background-color: bisque;
-		position: absolute;
-		top: 50px;
-		left: 0;
-		width: 300px;
-        height: 100vh; 
-	}  
-		
-	.container .main{
-		display : grid;
-		/*grid-template-columns: repeat(4, 1fr);*/
-		grid-column : span 4;
-		grid-auto-rows: 200px;
-		background-color: blue;
-		position: relative;
-		top: 50px;
-		/*left: 300px;
-		margin-left: 2px;
-		*/
-		/*width: 400px;*/
-        height: 100vh;
-        }	
 	
    </style>
    
+   <div id ="buttons" class="button-bar" style="display:none;">
+		<div class="buttons" >
+			<button class="btn" id="user-login" onclick="handleUserLogin()">User Login</button>
+			<button class="btn" id="dev-login" onclick="handleDevLogin()">Developer Login</button>
+	        <button class="btn" id="regstr" onclick="handleRegstr()">Register</button>
+		</div>
+	</div> 
+   
 </head>
+
 <body>
-	<div class = "container">
-		<div class="sidebar">
-				<p>sidebar</p>	
+	<div class="container">
+    	<div class="topbar"> </div>
+		
+    	<div class="sidebar">	
+			<img src="/images/icon.png" id = "icon" />
+			
 		</div>
 		
-		<div class="main">
-				<p>Main</p>	
+    	<div class="main">
+			
+			
 		</div>
-	</div>
-	
-	<div class="button-bar">
-		<div class="buttons">
-			<button class="btn" id="user-login" onclick="handleUserLogin()">User Login</a>
-			<button class="btn" id="dev-login" onclick="handleDevLogin()">Developer Login</a>
-	        <button class="btn" id="regstr" onclick="handleRegstr()">Register</a>
-		</div>
-	</div>
+    	
+  	</div>
 	
 	
 	
@@ -100,7 +73,10 @@
 	    <button type="submit" id = "loginbtn" onclick="handlePostUserLogin()">login</button>
 	</div>  
 	
-	
+	<script>
+		const buttonBar = document.getElementById("buttons").innerHTML;
+		document.querySelector(".topbar").innerHTML = buttonBar;
+	</script>
 	
 	<script>
 		function handleUserLogin() {
@@ -114,6 +90,7 @@
 			lgn.style.display = "none"; 
 		}
 	</script>
+	
     
 </body>
 </html>

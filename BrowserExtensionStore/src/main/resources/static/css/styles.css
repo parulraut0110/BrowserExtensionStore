@@ -10,13 +10,16 @@
 	padding : 0;
 }
 
-.container{
-	max-width: 600px; 
-	margin : 0 auto; 
-	padding : 23px; 
-	text-align : center;
-  }
-  
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: 40px auto; 
+    grid-gap: 5px;
+
+    height: 100vh;
+}
+
+
 .button-bar .buttons {
 	margin-left : auto;
 	
@@ -39,3 +42,41 @@
 .button-bar .btn:first-child {
     margin-left: auto;
 } 
+
+.topbar {
+    grid-column: 1 / -1; 
+    grid-row: 1 / 2; 
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar {
+    grid-column: 1 / 3; 
+    grid-row: 2 / -1; 
+    background-color: #444;
+    color: white;
+    padding: 20px;
+}
+
+.main {
+    grid-column: 3 / -1; 
+    grid-row: 2 / -1; 
+    background-color: beige;
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#icon {
+	position: relative;
+	margin: 5px;
+	padding: 0;
+	top : 10px;
+	height: 100px;
+	width: auto;
+}
