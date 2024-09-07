@@ -14,7 +14,10 @@
 	  border-radius:15px;
 	  margin:10px;
 	  padding:20px;
-	  margin-left: auto;
+	  margin-left:auto;
+	  position:absolute;	
+	  top:34px;
+	  left:1150px;
 	  }
 	
 	#user {
@@ -28,54 +31,52 @@
 	#loginbtn {
 	  position: relative;
 	  left:200px;
-	  } 
-	  
-	
+	  } 	
    </style>
    
-   <div id ="buttons" class="button-bar" style="display:none;">
-		<div class="buttons" >
-			<button class="btn" id="user-login" onclick="handleUserLogin()">User Login</button>
-			<button class="btn" id="dev-login" onclick="handleDevLogin()">Developer Login</button>
-	        <button class="btn" id="regstr" onclick="handleRegstr()">Register</button>
-		</div>
-	</div> 
+	
    
 </head>
 
 <body>
 	<div class="container">
-    	<div class="topbar"> </div>
-		
+    	<div class="topbar">
+			<div class="buttons">
+				<button class="btn" id="user-login" onclick="handleUserLogin()">User Login</button>
+				<button class="btn" id="dev-login" onclick="handleDevLogin()">Developer Login</button>
+		        <button class="btn" id="regstr" onclick="handleRegstr()">Register</button>
+			</div>
+		</div>
     	<div class="sidebar">	
-			<img src="/images/icon.png" id = "icon" />
-			
+			<img src="/images/icon.png" id = "icon" />	
+    		<div class="seperator"> </div>
+    		<div class="category">
+				<img id="tools-icon" src="/images/tools.png"/>
+    			<button id="tools">tools</button>
+    		</div>
 		</div>
-		
-    	<div class="main">
-			
-			
+    	<div class="main">	
 		</div>
-    	
   	</div>
 	
 	
 	
 	<div class="login" id="login" >
 	    <div id = "user">
-	      <label for="user">username:</label>
-	      <input type="text" name="user"/>
+	      <label for="user">Username:</label>
+	      <input type="text" name="user" />
 	    </div>
 	    <div id = "pwd">
-	      <label for="pwd">password:</label>
+	      <label for="pwd">Password:</label>
 	      <input type="text" name="pwd"/>
 	    </div>
 	    <button type="submit" id = "loginbtn" onclick="handlePostUserLogin()">login</button>
 	</div>  
 	
 	<script>
-		const buttonBar = document.getElementById("buttons").innerHTML;
-		document.querySelector(".topbar").innerHTML = buttonBar;
+		const buttons = document.getElementById("buttons").cloneNode(true);
+		const topbar = document.querySelector(".topbar").innerHTML;
+		topbar.appendChild(buttons);
 	</script>
 	
 	<script>
