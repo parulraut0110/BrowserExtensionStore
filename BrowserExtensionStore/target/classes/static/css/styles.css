@@ -57,6 +57,7 @@ body {
     background-color: #444;
     color: white;
     padding: 20px;
+   
 }
 
 .main {
@@ -75,14 +76,14 @@ body {
 	width: auto;
 }
 
-.sidebar .seperator {
+.sidebar .separator {
 	width: 300px;
 	height: 1px;
 	background-color: white;
 	margin: 30px 0;
 }
 
-.sidebar #tools {
+.sidebar .category .item button {
 	height: 50px;
 	width: 150px;
 	background-color: inherit;
@@ -90,7 +91,9 @@ body {
 	font-size: 20px;
 	border: none;
 	font-family: Georgia, 'Times New Roman', Times, serif;
+	
 }
+
 
 .sidebar .category {
 	display: flex;
@@ -99,7 +102,26 @@ body {
 	width: 150px;
 }
 
-.sidebar .category #tools-icon {
+.sidebar .category .item img {
 	height: 40px;
 	width: 40px;
+	
+}
+
+
+.rollon {
+	display: none;
+	height: 50px;
+	width: 0;
+	background-color: red;
+	margin-top: 15px;
+	margin-left: 15px;
+	transition: width 0.3s ease;
+	position: relative;
+}
+
+
+.category:hover + .rollon {
+	display: block;
+	width: 150px;
 }
