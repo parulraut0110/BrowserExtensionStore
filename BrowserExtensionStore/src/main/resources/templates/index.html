@@ -47,25 +47,30 @@
 		        <button class="btn" id="regstr" onclick="handleRegstr()">Register</button>
 			</div>
 		</div>
+		
     	<div class="sidebar">	
 			<img src="/images/icon.png" id = "icon" />	
     		<div class="separator"> </div>
+    		
     		<div class="category">
-				<div class="item" id="tools" style="display: flex; justify-content: space-between; ">
+				
+				<div class="item" id="tools">
 					<img id="tools-icon" src="/images/tools.png"/>
-	    			<button id="tools-btn">tools</button>	
-	    			
+	    			<button id="tools-btn" onclick="showtools()">tools</button>	
+	    			<div class="rollon"></div>
     			</div> 
+    			
     			<div class="item" id="entertain" style="display: flex; justify-content: space-between; ">
 					<img id="entertain-icon" src="/images/entertain.png"/>
 	    			<button id="entertain-btn">entertainment</button>
-	    			<br>	
+	    			<div class="rollon"></div>	
     			</div>
+    			
     		</div>
-    		
-    		
 		</div>
-    	<div class="main">	
+		
+    	<div class="main" >	
+			<p id="descr"></p>
 		</div>
   	</div>
 	
@@ -82,6 +87,19 @@
 	    </div>
 	    <button type="submit" id = "loginbtn" onclick="handlePostUserLogin()">login</button>
 	</div>  
+	
+	
+	<script>
+		const tools_btn = document.getElementById("tools-btn");
+		tools_btn.addEventListener('click', function() {
+			document.getElementById("descr").innerHTML = "This is the project despriction. Download it for best user expirence";
+		});
+		
+		const entertain_btn = document.getElementById("entertain-btn");
+		entertain_btn.addEventListener('click', function() {
+			alert('entertain button clicked');
+		});			
+	</script>
 	
 	<script>
 		const buttons = document.getElementById("buttons").cloneNode(true);
@@ -102,6 +120,13 @@
 		}
 	</script>
 	
-    
+	<script>
+		function showtools() {
+			console.log("tools cliked");
+			alert('tools cliked');
+		}
+		
+	</script>
+	
 </body>
 </html>
