@@ -1,6 +1,7 @@
 package com.parul.BrowserExtensionStore.Entity;
 
 import java.io.InputStream;
+
 import java.sql.Date;
 
 import jakarta.persistence.*;
@@ -41,9 +42,11 @@ public class ExtensionEntity {
 	    @Column(name = "extension", columnDefinition = "MEDIUMBLOB")	  
 	    private byte[] extension;
 	    
+	    @Column(name = "description", columnDefinition = "TEXT")
+	    private String description;
 
 		public ExtensionEntity(int serialNo, String extensionName, int devId, Date dateUploaded, Date lastModified,
-				String versionNo, String browserLink, byte[] extension) {
+				String versionNo, String browserLink, byte[] extension, String description) {
 			super();
 			this.serialNo = serialNo;
 			this.extensionName = extensionName;
@@ -53,6 +56,7 @@ public class ExtensionEntity {
 			this.versionNo = versionNo;
 			this.browserLink = browserLink;
 			this.extension = extension;
+			this.description = description;
 		}
 
 		public int getSerialNo() {
@@ -117,6 +121,14 @@ public class ExtensionEntity {
 
 		public void setExtension(byte[] extension) {
 			this.extension = extension;
+		}
+		
+		public String getDescription() {
+			return description;
+		}
+		
+		public void setDescription(String description) {
+			this.description = description;
 		}
 
 	    

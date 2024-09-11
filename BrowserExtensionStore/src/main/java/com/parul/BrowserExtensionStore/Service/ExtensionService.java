@@ -19,7 +19,7 @@ public class ExtensionService {
     @Autowired
     private ExtensionRepo extensionRepo;
 
-    public void saveExtension(String extensionName, int devId, Date dateUploaded, Date lastModified, String versionNo, String browserLink, byte[] fileStream) {
+    public void saveExtension(String extensionName, int devId, Date dateUploaded, Date lastModified, String versionNo, String browserLink, byte[] fileStream, String description) {
         // Ensure that dates are not null
         if (dateUploaded == null || lastModified == null) {
             throw new IllegalArgumentException("dateUploaded and lastModified cannot be null");
@@ -34,6 +34,7 @@ public class ExtensionService {
         extension.setVersionNo(versionNo);
         extension.setBrowserLink(browserLink);
         extension.setExtension(fileStream); // Set the InputStream as the blob
+        extension.setDescription(description);
 
         // Save the entity to the database
         try {
@@ -44,4 +45,6 @@ public class ExtensionService {
             e.printStackTrace();
         }
     }
+    
+    
 }

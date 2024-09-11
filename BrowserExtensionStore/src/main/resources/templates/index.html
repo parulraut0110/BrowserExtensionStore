@@ -41,6 +41,9 @@
 <body>
 	<div class="container">
     	<div class="topbar">
+			<form class="btn" id="search-form" action="/search" method="GET" style="padding-left: 900px;">
+				<input type="text" id="search-query" name="search" placeholder="Search..." style="border: 3px solid thick"/>
+			</form>
 			<div class="buttons">
 				<button class="btn" id="user-login" onclick="handleUserLogin()">User Login</button>
 				<button class="btn" id="dev-login" onclick="handleDevLogin()">Developer Login</button>
@@ -126,6 +129,15 @@
 			alert('tools cliked');
 		}
 		
+	</script>
+	
+	<script>
+		document.getElementById('search-query').addEventListener('keydown', function(e) {
+			if(e.key === 'Enter') {
+				e.preventDefault();
+				document.getElementById('search-form').submit(); 
+			}
+		});
 	</script>
 	
 </body>

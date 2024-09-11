@@ -26,12 +26,14 @@ public class ExtensionController {
         Date dateUploaded = sdf.parse("2024-08-18");  // Create a 'Date' object corresponding to the string input provided
 
         // Read the file as byte[]
-        Path path = Paths.get("C:\\BrowserExtension\\me.jpeg");
+        Path path = Paths.get("C:\\BrowserExtension\\DarkModeExtension.zip");
         byte[] fileData = Files.readAllBytes(path);  // Convert file to byte[]
 
         System.out.println("Saving extension entry...");
         // Call the service with the byte[] data
-        extensionService.saveExtension("Dark Mode Extension", 10, dateUploaded, dateUploaded, "1.0.0", "https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?pli=1", fileData);
+        extensionService.saveExtension("Dark Mode Extension", 10, dateUploaded, dateUploaded, "1.0.0", "https://chromewebstore.google.com/detail/darkmodeextension/jcgmljkndiijbonfbbhibbfidmbdojfl?authuser=2", fileData, "Improve your web browsing with our Chrome extension. It allows you to easily switch between light and dark modes, making it easier on your eyes. You can also adjust contrast, saturation, and grayscale to suit your needs. The Night Light feature adds a warm sepia tone to reduce blue light at night. With a simple reset option to return settings to their defaults, this extension offers a customizable and comfortable browsing experience.");
         System.out.println("Saved extension entry");
     }
+    
+    
 }

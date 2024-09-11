@@ -62,8 +62,8 @@ body {
 .main {
     grid-column: 3 / -1; 
     grid-row: 2 / -1; 
-    background-color: beige;
     padding: 20px;
+    background: linear-gradient(to right, #e5e5b0, #F5F5DC);
 }
 
 #icon {
@@ -121,6 +121,7 @@ body {
 	margin-left: -5px;
 	transition: width 0.3s ease;
 	position: absolute;
+	background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 
 .item:hover .rollon {
@@ -129,7 +130,7 @@ body {
 
 .main #descr {
   margin:10px;
-  width:auto;
+  width:auto;                     
   font-size: 16px;
   
 }
