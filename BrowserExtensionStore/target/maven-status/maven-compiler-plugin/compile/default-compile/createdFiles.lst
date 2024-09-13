@@ -1,0 +1,16 @@
+com\parul\BrowserExtensionStore\Repository\UserRepo.class
+com\parul\BrowserExtensionStore\dto\SearchResultDTO.class
+com\parul\BrowserExtensionStore\dto\UserRegistrationDto.class
+com\parul\BrowserExtensionStore\Controller\SearchController.class
+com\parul\BrowserExtensionStore\Model\SearchData.class
+com\parul\BrowserExtensionStore\BrowserExtensionStoreApplication.class
+com\parul\BrowserExtensionStore\Controller\UserRegistrationController.class
+com\parul\BrowserExtensionStore\Service\UserServiceImpl.class
+com\parul\BrowserExtensionStore\Service\ExtensionService.class
+com\parul\BrowserExtensionStore\Service\UserService.class
+com\parul\BrowserExtensionStore\Controller\LoginController.class
+com\parul\BrowserExtensionStore\Entity\User.class
+com\parul\BrowserExtensionStore\Controller\IndexController.class
+com\parul\BrowserExtensionStore\Repository\ExtensionRepo.class
+com\parul\BrowserExtensionStore\Entity\ExtensionEntity.class
+com\parul\BrowserExtensionStore\Controller\ExtensionController.class

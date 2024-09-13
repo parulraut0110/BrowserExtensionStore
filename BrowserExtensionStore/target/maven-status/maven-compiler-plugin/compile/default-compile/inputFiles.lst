@@ -1,2 +1,16 @@
 C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\BrowserExtensionStoreApplication.java
-C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Entity\ExtensionsEntity.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Controller\ExtensionController.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Controller\IndexController.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Controller\LoginController.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Controller\SearchController.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Controller\UserRegistrationController.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\dto\SearchResultDTO.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\dto\UserRegistrationDto.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Entity\ExtensionEntity.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Entity\User.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Model\SearchData.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Repository\ExtensionRepo.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Repository\UserRepo.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Service\ExtensionService.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Service\UserService.java
+C:\Users\parul\OneDrive\Desktop\Spring\BrowserExtensionStore\BrowserExtensionStore\src\main\java\com\parul\BrowserExtensionStore\Service\UserServiceImpl.java
