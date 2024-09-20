@@ -74,6 +74,9 @@ Contributions are welcome! Please fork the repository and create a pull request 
 ## Contact
 For any questions or inquiries, feel free to contact `parulraut0110@gmail.com`.
 
+## Due to some issues we created our new repository 
+Check out [this repository](https://github.com/username/other-repo-name) for more information.
+
 
 
   
