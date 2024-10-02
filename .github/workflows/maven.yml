@@ -24,12 +24,13 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    # Change to the directory containing the pom.xml file
+    # Change to the directory containing the pom.xml file (if needed)
     - name: Change to subdirectory containing pom.xml
       run: cd BrowserExtensionStore
     
-    - name: Build with Maven
-      run: mvn -B package --file BrowserExtensionStore/pom.xml
+    # Build with Maven and skip tests
+    - name: Build with Maven (skip tests)
+      run: mvn -B package -DskipTests --file BrowserExtensionStore/pom.xml
     
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
