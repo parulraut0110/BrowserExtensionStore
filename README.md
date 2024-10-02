@@ -25,7 +25,7 @@ BrowserExtensionStore is a Spring Boot-based application designed for managing a
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/BrowserExtensionStore.git
+    git clone https://github.com/parulraut0110/BrowserExtensionStore.git
     ```
 2. Configure the MySQL database connection in `application.properties`:
     ```properties
