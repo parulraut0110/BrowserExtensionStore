@@ -5,11 +5,7 @@ BrowserExtensionStore is a Spring Boot-based application designed for managing a
 
 ![image](https://github.com/user-attachments/assets/844aa948-9461-42e8-945e-329938f53b16)
 
-
-
 ![image](https://github.com/user-attachments/assets/0e46236d-b4c6-4397-924e-6ce84d137644)
-
-
 
 ![image](https://github.com/user-attachments/assets/4f16ebd9-69f3-4a23-a127-4cabc5d58201)
 
